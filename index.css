@@ -1,0 +1,257 @@
+body{
+    background-color: black
+}
+
+
+.split{
+    height: 100%;
+    width: 45%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+
+.splits{
+    height: 100%;
+    width: 55%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+/* Control the left side */
+.left{
+    display: block;
+    left: 0;
+    background-color: "black";
+    padding: 8%;
+    padding-top: 2%;
+    overflow-y: hidden;
+    z-index: 200;
+}
+
+/* Control the right side */
+.right{
+    right: 0;
+    background-image: url(./images/churchgrey.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: "#a19f9f";
+    border-top: solid 50px #a19f9f;
+}
+
+/* To center the contents */
+.centered{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+/* Styling the image inside */
+
+.centered img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+
+.vl{
+    position: absolute;
+    top: 0%;
+    left: 30%;
+    border-left: 10px solid #a19f9f;
+    height: 100%;
+}
+
+
+.vl2{
+    position: absolute;
+    top: 0%;
+    left: 70%;
+    border-left: 10px solid #a19f9f;
+    height: 100%;
+}
+
+.rest{
+    position: relative;
+    top: 90%;
+    background-color: #a19f9f;
+    width: 100%;
+    height: 35%;
+    padding: 8%;
+}
+
+
+.last{
+    position: relative;
+    top: 90%;
+    background-color: #a19f9f;
+    width: 100%;
+    /* height: 30%; */
+    padding: 8%;
+}
+
+
+.next{
+    position: relative;
+    top: 90%;
+    background: none;
+    width: 100%;
+    height: 55%;
+    padding: 8%;
+}
+.some .some-body{
+    position: relative;
+    text-align: justify;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.some .some-bod{
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+    padding-bottom: 20px;
+}
+
+.some .some-header{
+    position: relative;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    color: #d40d38;
+    text-shadow: #ffffff 2px 1px 2px;
+    font-weight: bold;
+} 
+
+.contacts{
+    position: relative;
+    border-top: 20px solid #a19f9f;
+    text-align: center;
+    padding: 10px;
+    z-index: 20;
+}
+
+.contacts a{
+    color: #d40d38;
+    font-weight: bold;
+}
+
+.contactss{
+    position: relative;
+    top: -40px;
+    background-color: #d40d38;
+    height: 120px;
+    padding: 20px;
+    text-align: center;
+}
+
+.contactss a{
+    color: #ffffff;
+    font-weight: bold;
+}
+.address{
+    position: relative;
+    top: -55px;
+    text-align: center;
+    padding: 10px;
+    z-index: 20;
+}
+
+.address a{
+    color: #d40d38;
+    font-weight: bold;
+}
+
+.name{
+    position: absolute;
+    color: #d40d38;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+.name3{
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    color: #d40d38;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.name2{
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    color: #ffffff;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    opacity: 1;
+    /* text-align: center; */
+}
+
+.flan{
+    text-align: center;
+}
+
+.harmburger{
+    position: absolute;
+    display: none;
+    z-index: 200px;
+    color: #ffffff;
+    background-color: #a19f9f;
+    padding: 2%;
+    height: 50px;
+    cursor: pointer;
+}
+
+.sone-header{
+    text-align: center;
+    color: #d40d38;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.sone{
+    
+    border-right: solid 2px #ffffff;
+}
+
+.sone-body{
+    text-align: center;
+    color: #ffffff; 
+    height: 80px;
+}
+/* Media Query */
+
+
+@media (max-width: 768px) {
+    .left {
+        display: none;
+    }
+   .right{
+       width: 100%;
+   }
+   .left{
+       width: 100%;
+       overflow-y: scroll;
+   }
+
+   .harmburger{
+       display: block;
+       z-index: 250;
+   }
+}
+
+
+@media (min-width: 768px) {
+    .left {
+        display: block;}
+    }
